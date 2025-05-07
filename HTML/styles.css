@@ -1,0 +1,62 @@
+/* Use Orbitron font for navbar branding */
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+}
+
+/* Style dropdown to match navbar dark theme */
+.dropdown-menu {
+    background-color: #212529; /* Bootstrap bg-dark */
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Hide the submenu by default */
+.submenu {
+    background-color: #212529;
+    display: none;
+    position: absolute;
+    left: 100%; /* Position to the right of the parent */
+    top: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Show the submenu when hovering over the parent item */
+.dropdown-submenu:hover .submenu {
+    display: block;
+}
+
+/* Optional: Styling for the submenu */
+.submenu .dropdown-item {
+    white-space: nowrap;
+}
+
+/* Make the text inside the <p> tag bigger and left aligned */
+.larger-text-left {
+    font-size: 1.5rem;  /* Adjust the font size as needed */
+    text-align: left;   /* Align the text to the left */
+    margin-left: 0;     /* Reset any left margin if needed */
+    font-weight: bold;  /* Make the text bold */
+    padding-left: 5px;  /* Adds 5 pixels of padding to the top */
+}
+
+/* Make the text inside the <p> tag bigger and left aligned */
+.main-body-text {
+    font-size: 1rem;  /* Adjust the font size as needed */
+    text-align: left;   /* Align the text to the left */
+    padding-left: 5px;  /* Adds 5 pixels of padding to the top */
+}
+
+#defaultContent {
+    padding-top: 5px;  /* Adds 5 pixels of padding to the top */
+}
+
+
