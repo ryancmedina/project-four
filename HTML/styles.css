@@ -56,7 +56,29 @@
 }
 
 #defaultContent {
-    padding-top: 5px;  /* Adds 5 pixels of padding to the top */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Make the title bold and optionally increase font size */
+.custom-title {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 2rem; /* You can adjust this size as needed */
+    margin-bottom: 20px;
+}
+
+/* Ensure the image is responsive and centered */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
