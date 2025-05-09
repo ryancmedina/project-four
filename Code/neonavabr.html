@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Group 2 NASA Data</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid d-flex px-0">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" id="optionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="optionsDropdown">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Near Earth Objects</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sizes</a></li>
+                            <li><a class="dropdown-item" href="#">Velocities</a></li>
+                            <li><a class="dropdown-item" href="#">Hazards</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Solar Flares</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="cme_frequency.html">Frequency</a></li>
+                            <li><a class="dropdown-item" href="#">Classification</a></li>
+                            <li><a class="dropdown-item" href="#">Danger</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="index.html">Group 2 - NASA Data</a>
+            <div class="ms-auto">
+                <a class="btn btn-primary" href="https://www.nasa.gov/" target="_blank">
+                    NASA Website
+                </a>
+            </div>    
+        </div>
+    </nav>
+</div>
+<!-- Below here is going to be your "Main Body" of your Site.  This is here so you can use the Styles that exist in the current styles.css
+    
+---------------  !!! IF YOU WANT TO MOVE THINGS AROUND PLEASE CHANGE THE NAME OF THE ID AND OR CLASS !!! ---------------" 
+
+This is to prevent your changes from affecting other pages.  Just add your new stuff to the styles.css-->
+<div class="map-container text-center my-4" style="padding-top: 80px;">
+    <h2 class="custom-title">Hazardous NEOs Heatmap - 2025</h2>
+    <h4 class="question-text-left">Where (in Earth-relative coordinates) are NEOs most likely to appear?
+    </h4>
+    <p class="main-body-paragraph"> Since NASA's NEO API doesn't give actual latitude/longitude approach coordinates, we would simulate random latitudes/longitudes for the NEOs based on their orbital parameters. The map would show the Earth with random lat/lon points representing where NEOs are most likely to appear (approach Earth) in Earth-relative spatial coordinates.</p>
+        <p>Assumptions for the map:
+        <ol>- You dont have real impact coordinates.</ol>
+        <ol>- But you do have orbiting body, velocity, miss distance, and date.</ol>
+        <ol> Simulate or project Earth-relative coordinates from miss_distance_km, close approach date (2025), Hazardous=True.</ol>
+        
+        </p>
+
+    <iframe src="neo_impact_heatmap.html" width="100%" height="600" style="border:none;"></iframe>
+
+
+        
+</div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+    // JavaScript can be added here for more dynamic behavior if needed.
+</script>
+
+</body>
+</html>
