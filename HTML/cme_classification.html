@@ -59,12 +59,70 @@
 This is to prevent your changes from affecting other pages.  Just add your new stuff to the styles.css-->
 
 <div id="defaultContent" class="title-image-section text-center">
-    <h1 class="custom-title">Your Title Here</h1>
+    <h1 class="custom-title">CME Classifications</h1>
     <div class="image-container text-center">
         <img src="https://www.stce.be/sites/default/files/field/image/20020716_1630_c2.gif" alt="Asteroid Image" class="img-fluid">
-        <h4 class="larger-text-left">This is your question -- ?</h4>
-        <p class="main-body-text">This is your paragraph to talk about your stuff.</p>
+        <h4 class="larger-text-left">What are the types of CME's?</h4>
+        <p class="main-body-text">Coronal Mass Ejections (CMEs) can be observationally classified based on the instruments and wavelengths through which they are detected. 
+            The most common type is C-type, observed by coronagraphs such as SOHO's LASCO instruments, which block direct sunlight to visualize the expanding plasma cloud in 
+            the solar corona. S-type CMEs are associated with enhancements in soft X-ray emissions, often linked to solar flares observed by space-based X-ray telescopes like 
+            GOES. E-type CMEs are identified through activity in Extreme Ultraviolet (EUV) wavelengths, particularly using instruments like the EIT (Extreme ultraviolet Imaging 
+            Telescope) aboard SOHO. These classifications help correlate the CME's visual and energetic characteristics with their solar source regions and improve understanding 
+            of their potential impact on Earth.</p>
     </div>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead style="background-color: #f2f2f2;">
+          <tr>
+            <th>CME Classification</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Halo CME</td>
+            <td>Appears to surround the entire occulting disk, indicating it's directed toward or away from Earth. Often geoeffective.</td>
+          </tr>
+          <tr>
+            <td>Partial Halo CME</td>
+            <td>Occupies more than 120° of the solar disk, suggesting a wide-angle eruption, possibly partially Earth-directed.</td>
+          </tr>
+          <tr>
+            <td>Limb CME</td>
+            <td>Observed at the edge of the Sun. Typically moves sideways relative to Earth and is not Earth-directed.</td>
+          </tr>
+          <tr>
+            <td>Narrow CME</td>
+            <td>Displays a narrow angular width, often less energetic and less likely to cause significant geomagnetic effects.</td>
+          </tr>
+          <tr>
+            <td>Streamer Blowout</td>
+            <td>Characterized by a slow expansion and removal of coronal streamers. Often weaker and slow-moving.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead style="background-color: #f2f2f2;">
+          <tr>
+            <th>Code</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>C</td>
+            <td>CME observed in coronagraph data (e.g., LASCO C2/C3)</td>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>CME detected in solar soft X-ray emissions</td>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td>CME associated with activity in the EIT (Extreme ultraviolet Imaging Telescope)</td>
+          </tr>
+        </tbody>
+      </table>
+      
 </div>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
