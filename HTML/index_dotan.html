@@ -38,7 +38,7 @@
               <li class="dropdown-submenu">
                 <a class="dropdown-item" href="#">Near Earth Objects</a>
                 <ul class="submenu dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sizes</a></li>
+                  <li><a class="dropdown-item" href="index_ryan.html">KMeans Potential</a></li>
                   <li><a class="dropdown-item" href="neonavabr.html">Hazard Heatmap</a></li>
                   <li><a class="dropdown-item" href="index_dotan.html">Hazard Potential</a></li>
                 </ul>
@@ -72,14 +72,12 @@
 This is to prevent your changes from affecting other pages.  Just add your new stuff to the styles.css-->
 
     <div id="defaultContent" class="title-image-section text-center">
-      <h1 class="custom-title">Potential Hazards of NEOs</h1>
+      <h1 class="custom-title">Potential Hazards with NEOs</h1>
       <div class="image-container text-center">
         <img
           src="https://d.newsweek.com/en/full/2214347/asteroid-flying-above-earth.jpg"
           alt="Asteroid Image"
           class="img-fluid"
-          width="80%"
-          height="80%"
         />
         <h4 class="larger-text-left">
          
@@ -153,7 +151,7 @@ This is to prevent your changes from affecting other pages.  Just add your new s
 <script>
   const data = [{
     x: ['2025–2050', '2050–2075', '2075–2100', '2100–2125'],
-    y: [0.01, 0.015, 0.02, 0.025],
+    y: [0.0001, 0.00015, 0.0002, 0.00025],
     type: 'bar',
     text: ['1 in 10,000', '1.5 in 10,000', '2 in 10,000', '2.5 in 10,000'],
     textposition: 'outside',
@@ -256,7 +254,7 @@ This is to prevent your changes from affecting other pages.  Just add your new s
 
 
 <h2 style="text-align:center; font-size: 28px; margin-top:60px;">
-  Asteroid Impact Explorer: Now with Clear Bombs and Craters
+  Asteroid Impact Explorer
 </h2>
 
 <div style="text-align:center; margin-bottom: 20px;">
@@ -264,8 +262,8 @@ This is to prevent your changes from affecting other pages.  Just add your new s
     Choose a view:
   </label>
   <select id="impactView" style="font-size: 16px; padding: 6px 12px;">
-    <option value="funnyEnergy"> Energy ( Hiroshima bombs)</option>
     <option value="crater">Crater Size & Comparison</option>
+    <option value="funnyEnergy">Energy (Hiroshima bombs)</option>
   </select>
 </div>
 
@@ -297,7 +295,7 @@ This is to prevent your changes from affecting other pages.  Just add your new s
         `20 MT ≈ ${bombCounts[3].toLocaleString()} bombs. City destroyer. Local news anchor screams ‘Oh my God’ before the camera cuts out.`,
         `100 MT ≈ ${bombCounts[4].toLocaleString()} bombs. Regional catastrophe.`,
         `1,000 MT ≈ ${bombCounts[5].toLocaleString()} bombs. Global threat. Climate impact possible.`,
-        `100,000 MT ≈ ${bombCounts[6].toLocaleString()} bombs. Comparable to the asteroid that ended the dinosaurs’ reign 66 million years ago.`
+        `100,000 MT ≈ ${bombCounts[6].toLocaleString()} bombs. Comparable to the asteroid that ended the dinosaurs’  66 million years ago.`
       ],
       crater: [
         "No crater. Completely burn up or explode in the upper atmosphere—often unnoticed.",
@@ -324,7 +322,7 @@ This is to prevent your changes from affecting other pages.  Just add your new s
         textposition: 'auto',
         textfont: {
           family: 'Arial Black, Arial, sans-serif',
-          size: 10,
+          size: 12,
           color: 'black'
         },
         hoverinfo: 'text',
@@ -354,13 +352,14 @@ This is to prevent your changes from affecting other pages.  Just add your new s
       Plotly.newPlot("asteroidImpactChart", [trace], layout);
     }
 
-    drawChart("funnyEnergy");
+    drawChart("crater"); // default view changed to crater
 
     document.getElementById("impactView").addEventListener("change", function () {
       drawChart(this.value);
     });
   });
 </script>
+
 
 
 
