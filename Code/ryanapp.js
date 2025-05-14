@@ -187,7 +187,7 @@ function displayStats(cluster, dataset)
 
   
   sorted = clusterData.sort((a, b) => a - b);
-  if(c == 3)
+  if(c == 2)
   {
     median = clusterData[0];
   }
