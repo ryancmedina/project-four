@@ -54,11 +54,38 @@
  
 </div>
 
-<!-- <div class="container-fluid mt-5 pt-4">
-    </div> -->
-
 <div class="container">
     
+<div class="row">
+      <div class="col-sm text-center">
+        <h1>www</h1>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class = "text-center">Clustering Asteroids by Behavior</h1>
+      </div>
+    </div>  
+    
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class = "text-center">With the immense amount of data we have, are we able to properly cluster asteroids together using KMeans? For reference, here is what our data looks like currently:</h1>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+        <div id="demo"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class = "text-center">After standardizing the data and applying KMeans clustering, we end up with these clusters:</h1>
+      </div>
+    </div>
+
 <div class="row">
       <div class="col-md-12">
         <div id="plot"></div>
@@ -67,13 +94,29 @@
 
 <div class="row">
       <div class="col-sm text-center">Select Cluster:</div>
-      <div class="col-sm text-center">hhh</div>
+      <div class="col-sm text-center">Select Data:</div>
 </div> 
 
 <div class="row">
-      <div class="col-sm text-center"><select id="cluster" onchange="numberChanged(this.value)"></select></div>
-      <div class="col-sm text-center">hhh</div>
+      <div class="col-sm text-center"><select id="cluster"></select></div>
+      <div class="col-sm text-center"><select id="type"></select></div>
 </div> 
+
+<div class = "row mt-4">
+     <h3 class = "col-sm text-center" id = "mean"></h3>
+     <h3 class = "col-sm text-center" id = "median"></h3>
+</div>
+
+<div class = "row mt-4">
+     <h3 class = "col-sm text-center" id = "var"></h3>
+     <h3 class = "col-sm text-center" id = "stdev"></h3>
+</div>
+
+<div class="row mt-4">
+      <div class="col-md-12">
+        <h1 class = "text-center">While using KMeans did correctly partition the data in a way that mostly makes sense, the nature of the data gives us very little reason to use it, even if it were perfect. The overall density of our data leads to the clusters having no real significance.</h1>
+      </div>
+    </div>
 
 </div>
 
