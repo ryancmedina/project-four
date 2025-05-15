@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Group 2 NASA Data</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid d-flex px-0">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" id="optionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="optionsDropdown">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Near Earth Objects</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="index_ryan.html">KMeans Potential</a></li>
+                            <li><a class="dropdown-item" href="neonavabr.html">Hazard Heatmap</a></li>
+                            <li><a class="dropdown-item" href="index_dotan.html">Hazard Potential</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Coronal Mass Ejections</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="cme_classification.html">About CMEs</a></li>
+                            <li><a class="dropdown-item" href="cme_frequency.html">Frequency</a></li>                            
+                            <li><a class="dropdown-item" href="cme_hazards.html">Hazards</a></li>
+                            <li><a class="dropdown-item" href="cme_observers.html">Observers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="index.html">Group 2 - NASA Data</a>
+            <div class="ms-auto">
+                <a class="btn btn-primary" href="https://www.nasa.gov/" target="_blank">
+                    NASA Website
+                </a>
+            </div>    
+        </div>
+    </nav>
+ 
+</div>
+
+<div class="container">
+    
+<div class="row">
+      <div class="col-sm text-center">
+        <h1>www</h1>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class = "text-center">Clustering Asteroids by Behavior</h1>
+      </div>
+    </div>  
+    
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class = "text-center">With the immense amount of data we have, are we able to properly cluster asteroids together using KMeans? For reference, here is what our data looks like currently:</h1>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+        <div id="demo"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class = "text-center">After standardizing the data and applying KMeans clustering, we end up with these clusters:</h1>
+      </div>
+    </div>
+
+<div class="row">
+      <div class="col-md-12">
+        <div id="plot"></div>
+      </div>
+    </div>
+
+<div class="row">
+      <div class="col-sm text-center">Select Cluster:</div>
+      <div class="col-sm text-center">Select Data:</div>
+</div> 
+
+<div class="row">
+      <div class="col-sm text-center"><select id="cluster"></select></div>
+      <div class="col-sm text-center"><select id="type"></select></div>
+</div> 
+
+<div class = "row mt-4">
+     <h3 class = "col-sm text-center" id = "mean"></h3>
+     <h3 class = "col-sm text-center" id = "median"></h3>
+</div>
+
+<div class = "row mt-4">
+     <h3 class = "col-sm text-center" id = "var"></h3>
+     <h3 class = "col-sm text-center" id = "stdev"></h3>
+</div>
+
+<div class="row mt-4">
+      <div class="col-md-12">
+        <h1 class = "text-center">While using KMeans did correctly partition the data in a way that mostly makes sense, the nature of the data gives us very little reason to use it, even if it were perfect. The overall density of our data leads to the clusters having no real significance.</h1>
+      </div>
+    </div>
+
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src = "./neows_clusters.json"></script> -->
+<script type = "module" src = "/Code/ryanapp.js"></script>
+<script type="module">
+    // JavaScript can be added here for more dynamic behavior if needed.
+</script>
+
+</body>
+</html>

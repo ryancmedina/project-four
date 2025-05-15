@@ -1,0 +1,95 @@
+body {
+    background-color: #f0f0f0; /* Light gray */
+}
+
+/* Use Orbitron font for navbar branding */
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+}
+
+/* Style dropdown to match navbar dark theme */
+.dropdown-menu {
+    background-color: #212529; /* Bootstrap bg-dark */
+    border: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Hide the submenu by default */
+.submenu {
+    background-color: #212529;
+    display: none;
+    position: absolute;
+    left: 100%; /* Position to the right of the parent */
+    top: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Show the submenu when hovering over the parent item */
+.dropdown-submenu:hover .submenu {
+    display: block;
+}
+
+/* Optional: Styling for the submenu */
+.submenu .dropdown-item {
+    white-space: nowrap;
+}
+
+/* Make the text inside the <p> tag bigger and left aligned */
+.larger-text-left {
+    font-size: 1.5rem;  /* Adjust the font size as needed */
+    text-align: left;   /* Align the text to the left */
+    margin-left: 0;     /* Reset any left margin if needed */
+    font-weight: bold;  /* Make the text bold */
+    padding-top: 5px;
+    padding-left: 5px;  /* Adds 5 pixels of padding to the top */
+}
+
+/* Make the text inside the <p> tag bigger and left aligned */
+.main-body-text {
+    /* padding-top: 5px; */
+    font-size: 1rem;  /* Adjust the font size as needed */
+    text-align: left;   /* Align the text to the left */
+    padding-left: 5px;  /* Adds 5 pixels of padding to the top */
+}
+
+#defaultContent {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Make the title bold and optionally increase font size */
+.custom-title {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 2rem; /* You can adjust this size as needed */
+    margin-bottom: 20px;
+}
+
+/* Ensure the image is responsive and centered */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sub-body-text {
+    /* padding-top: 5px; */
+    font-size: .8rem;  /* Adjust the font size as needed */
+    text-align: center;
+    /* padding-left: 5px;  Adds 5 pixels of padding to the top */
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Group 2 NASA Data</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid d-flex px-0">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" id="optionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="optionsDropdown">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Near Earth Objects</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="index_ryan.html">KMeans Potential</a></li>
+                            <li><a class="dropdown-item" href="neonavabr.html">Hazard Heatmap</a></li>
+                            <li><a class="dropdown-item" href="index_dotan.html">Hazard Potential</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Coronal Mass Ejections</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="cme_classification.html">About CMEs</a></li>
+                            <li><a class="dropdown-item" href="cme_frequency.html">Frequency</a></li>                            
+                            <li><a class="dropdown-item" href="cme_hazards.html">Hazards</a></li>
+                            <li><a class="dropdown-item" href="cme_observers.html">Observers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="index.html">Group 2 - NASA Data</a>
+            <div class="ms-auto">
+                <a class="btn btn-primary" href="https://www.nasa.gov/" target="_blank">
+                    NASA Website
+                </a>
+            </div>    
+        </div>
+    </nav>
+
+</div>
+
+<div id="defaultContent" class="title-image-section text-center">
+    <h1 class="custom-title">Coronal Mass Ejections (CMEs)</h1>
+    <div class="image-container text-center">
+        <img src="https://static.scientificamerican.com/sciam/cache/file/B88DFB10-8388-4957-B047217A10003073_source.gif" alt="Asteroid Image" class="img-fluid">
+        <h4 class="larger-text-left">What is a Coronal Mass Ejection? (CME)</h4>
+        <p class="main-body-text">A Coronal Mass Ejection (CME) is a massive burst of solar wind and magnetic fields rising above the solar corona or being released into space. 
+            These powerful eruptions originate from the Sun's outer atmosphere, often following solar flares or other signs of heightened solar activity. CMEs occur when magnetic 
+            field lines near sunspots become twisted and unstable, suddenly releasing enormous amounts of plasma and energy. This ejected material travels through the solar system 
+            and can interact with Earth's magnetosphere, potentially disrupting satellite communications, GPS systems, and even power grids. The frequency and intensity of CMEs are 
+            closely tied to the 11-year solar cycle, a natural period of increasing and decreasing solar activity. During solar maximum—the peak of this cycle—the Sun exhibits more 
+            sunspots and a higher likelihood of CMEs. In contrast, solar minimum is a quieter phase with fewer eruptions. Understanding CMEs and the solar cycle is essential for space 
+            weather forecasting and protecting technology on Earth and in orbit.</p>
+    </div>
+<h2 class="custom-title">CME Activity by Year</h2>
+<iframe src="https://public.tableau.com/views/CME_Frequency/CMEsByYear?:showVizHome=no&:embed=true"
+        width="800"
+        height="500"
+        frameborder="0"
+        allowfullscreen>
+</iframe>
+<p class="sub-body-text text-center">This chart shows the number of Coronal Mass Ejections (CMEs) recorded each year. This data helps us understand the frequency and of solar activity over time.</p>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+    // JavaScript can be added here for more dynamic behavior if needed.
+</script>
+
+</body>
+</html>
+

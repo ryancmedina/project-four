@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Group 2 NASA Data</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid d-flex px-0">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" id="optionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="optionsDropdown">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Near Earth Objects</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="index_ryan.html">KMeans Potential</a></li>
+                            <li><a class="dropdown-item" href="neonavabr.html">Hazard Heatmap</a></li>
+                            <li><a class="dropdown-item" href="index_dotan.html">Hazard Potential</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#">Coronal Mass Ejections</a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="cme_classification.html">About CMEs</a></li>
+                            <li><a class="dropdown-item" href="cme_frequency.html">Frequency</a></li>                            
+                            <li><a class="dropdown-item" href="cme_hazards.html">Hazards</a></li>
+                            <li><a class="dropdown-item" href="cme_observers.html">Observers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="index.html">Group 2 - NASA Data</a>
+            <div class="ms-auto">
+                <a class="btn btn-primary" href="https://www.nasa.gov/" target="_blank">
+                    NASA Website
+                </a>
+            </div>    
+        </div>
+    </nav>
+</div>
+<!-- Below here is going to be your "Main Body" of your Site.  This is here so you can use the Styles that exist in the current styles.css
+    
+---------------  !!! IF YOU WANT TO MOVE THINGS AROUND PLEASE CHANGE THE NAME OF THE ID AND OR CLASS !!! ---------------" 
+
+This is to prevent your changes from affecting other pages.  Just add your new stuff to the styles.css-->
+
+<div id="defaultContent" class="title-image-section text-center">
+    <h1 class="custom-title">The Hazards of CME's</h1>
+    <div class="image-container text-center">
+        <img src="https://cdn.mos.cms.futurecdn.net/dkWg3XHQp7sZ9fttAWnwyb.jpg" alt="Asteroid Image" class="img-fluid" style="width: 50%; height: 50%;">
+        <h4 class="larger-text-left">What are the risks of CME's?</h4>
+        <p class="main-body-text">Coronal Mass Ejections (CMEs) pose a significant threat to Earth's technological infrastructure and space environment. When a CME—a massive 
+            burst of solar plasma and magnetic fields—collides with Earth's magnetosphere, it can trigger geomagnetic storms capable of disrupting satellite operations, GPS 
+            navigation, and high-frequency radio communications. Power grids are particularly vulnerable, as strong geomagnetic currents induced by CMEs can overload and damage 
+            transformers, potentially causing widespread blackouts. Additionally, increased radiation levels during CME events pose health risks to astronauts and high-altitude 
+            airline passengers, especially near the poles. As our reliance on space-based and electrical technologies grows, understanding and preparing for CME impacts becomes 
+            increasingly critical for global safety and resilience.</p>
+        <img src="https://res.cloudinary.com/icelandtours/image/upload/v1667309946/northern_lights_above_glacier_lagoon_v2osk_unsplash_7d39ca647f.jpg" alt="Asteroid Image" class="img-fluid" style="width: 50%; height: 50%;">
+        <h4 class="larger-text-left">The beauty with the danger.</h4>
+        <p class="main-body-text">Auroras, often admired for their breathtaking beauty, are natural light displays that shimmer across the polar skies in brilliant greens, 
+            purples, and reds. These mesmerizing curtains of light are caused by charged particles from the Sun—often from a coronal mass ejection (CME)—colliding with Earth's 
+            magnetic field and atmosphere. While typically seen near the poles, auroras visible much farther south than usual can be a striking signal of intense solar activity. 
+            Such displays may indicate that a powerful CME has impacted Earth, potentially disrupting satellites, power grids, and communication systems. In this way, the beauty 
+            of the aurora can also serve as a dramatic and visible warning of space weather hazards.</p>
+        <h4 class="larger-text-left">Modeling the potential danger of a CME given it's features.</h4>
+        <p class="main-body-text">In our analysis, we used a regression-based machine learning model to evaluate and predict the potential threat of Coronal Mass Ejections (CMEs)
+             by creating a DangerIndex. This model took into account features such as the CME's speed, angular width (halfAngle), and its likelihood of impacting Earth 
+             (impactProbability) created using the Longitute and Latitude in combination with the half angle, and learned patterns from past CME events and their associated geomagnetic disturbances (represented by averaged Kp indices). By training on 
+             this data, the model was able to estimate a continuous threat score for new or observed CME events. In a real-world scenario, such a system could be integrated into 
+             early-warning frameworks to help space weather agencies assess the risk posed by incoming CMEs more rapidly and consistently—supporting decisions like satellite 
+             shielding, grid operator alerts, or aviation route adjustments.</p>
+    </div>
+<h2 class="custom-title">Predicted CMEs Danger Level</h2>
+<iframe src="https://public.tableau.com/views/CMEDanger/PossibleEarthImpactCMEs?:showVizHome=no&:embed=true"
+    width="800"
+    height="500"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+<p class="sub-body-text text-center">We applied a regression-based machine learning model to CME data to generate a DangerIndex, 
+    estimating the potential threat level based on impact probability, speed, and other key features.</p>
+</div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+    // JavaScript can be added here for more dynamic behavior if needed.
+</script>
+
+</body>
+</html>

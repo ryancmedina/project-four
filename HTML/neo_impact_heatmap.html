@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4365cada1ca543da990286e5974e8b7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4365cada1ca543da990286e5974e8b7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4365cada1ca543da990286e5974e8b7 = L.map(
+                "map_a4365cada1ca543da990286e5974e8b7",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ceb1ac26da01c3aa6a3b8a0505a2628b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ceb1ac26da01c3aa6a3b8a0505a2628b.addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var marker_2888077295b409d373037477002ffd5b = L.marker(
+                [11.429254376301174, 34.369987108763354],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_5c443a7210f23048b972da16bdd0fdb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_411a23503f3376bdce322edaa2511361 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4903f445b2638ed66539b3d627fe2891 = $(`<div id="html_4903f445b2638ed66539b3d627fe2891" style="width: 100.0%; height: 100.0%;">Name: (2020 BC6) Date: 2025-01-05 Hazardous: 1</div>`)[0];
+                popup_411a23503f3376bdce322edaa2511361.setContent(html_4903f445b2638ed66539b3d627fe2891);
+            
+        
+
+        marker_2888077295b409d373037477002ffd5b.bindPopup(popup_411a23503f3376bdce322edaa2511361)
+        ;
+
+        
+    
+    
+                marker_2888077295b409d373037477002ffd5b.setIcon(icon_5c443a7210f23048b972da16bdd0fdb7);
+            
+    
+            var marker_205e99e424126ac897b56a6cd83077bb = L.marker(
+                [40.53109760405579, -12.25280299233296],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_f70189d9aa5b9623a9e198ffa5fd8a1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba12a100c41e5b4a66e6b85ae7658ae8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5f0ec6ffa495da0dcca571afd36b6d7 = $(`<div id="html_d5f0ec6ffa495da0dcca571afd36b6d7" style="width: 100.0%; height: 100.0%;">Name: (2025 CH4) Date: 2025-02-11 Hazardous: 1</div>`)[0];
+                popup_ba12a100c41e5b4a66e6b85ae7658ae8.setContent(html_d5f0ec6ffa495da0dcca571afd36b6d7);
+            
+        
+
+        marker_205e99e424126ac897b56a6cd83077bb.bindPopup(popup_ba12a100c41e5b4a66e6b85ae7658ae8)
+        ;
+
+        
+    
+    
+                marker_205e99e424126ac897b56a6cd83077bb.setIcon(icon_f70189d9aa5b9623a9e198ffa5fd8a1c);
+            
+    
+            var marker_f8e3e9686b8ec85218b403e60b7c137f = L.marker(
+                [13.601527481506551, 41.139177744197895],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_ac7a7d6a4e7f58a0ce485013a0f264f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_baf963b329a0756c16fa875e2ffb82e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_163d904b5f79e75c12d4f91cdfc922e9 = $(`<div id="html_163d904b5f79e75c12d4f91cdfc922e9" style="width: 100.0%; height: 100.0%;">Name: 535844 (2015 BY310) Date: 2025-03-05 Hazardous: 1</div>`)[0];
+                popup_baf963b329a0756c16fa875e2ffb82e2.setContent(html_163d904b5f79e75c12d4f91cdfc922e9);
+            
+        
+
+        marker_f8e3e9686b8ec85218b403e60b7c137f.bindPopup(popup_baf963b329a0756c16fa875e2ffb82e2)
+        ;
+
+        
+    
+    
+                marker_f8e3e9686b8ec85218b403e60b7c137f.setIcon(icon_ac7a7d6a4e7f58a0ce485013a0f264f1);
+            
+    
+            var marker_ce64a3e518775bfed022149e830194f8 = L.marker(
+                [-29.476416950355542, -61.26128882197487],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_4bb44bdbf65965627cad3db686c133fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d067189d8600e2aa122f067e46d64653 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_943a4eae549df1ec3abbbb0d9678646e = $(`<div id="html_943a4eae549df1ec3abbbb0d9678646e" style="width: 100.0%; height: 100.0%;">Name: 535844 (2015 BY310) Date: 2025-03-05 Hazardous: 1</div>`)[0];
+                popup_d067189d8600e2aa122f067e46d64653.setContent(html_943a4eae549df1ec3abbbb0d9678646e);
+            
+        
+
+        marker_ce64a3e518775bfed022149e830194f8.bindPopup(popup_d067189d8600e2aa122f067e46d64653)
+        ;
+
+        
+    
+    
+                marker_ce64a3e518775bfed022149e830194f8.setIcon(icon_4bb44bdbf65965627cad3db686c133fc);
+            
+    
+            var marker_9ec3c2efbc274469ffe4c9f67e1432af = L.marker(
+                [63.44640182604192, -96.40070478530455],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_bcb28df4249661d4291bff3f301655de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_478753927179379bc9ad4cf5e4cd1fb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a805c07f35d153090b8cf6478be02d3 = $(`<div id="html_8a805c07f35d153090b8cf6478be02d3" style="width: 100.0%; height: 100.0%;">Name: (2025 BC10) Date: 2025-04-05 Hazardous: 1</div>`)[0];
+                popup_478753927179379bc9ad4cf5e4cd1fb5.setContent(html_8a805c07f35d153090b8cf6478be02d3);
+            
+        
+
+        marker_9ec3c2efbc274469ffe4c9f67e1432af.bindPopup(popup_478753927179379bc9ad4cf5e4cd1fb5)
+        ;
+
+        
+    
+    
+                marker_9ec3c2efbc274469ffe4c9f67e1432af.setIcon(icon_bcb28df4249661d4291bff3f301655de);
+            
+    
+            var marker_0ad7142b2fe5586955bf04b5f187aef3 = L.marker(
+                [89.7252632163052, -68.68011100927339],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_825b1fee77f94b9c49e1f7faf70073db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ae004782e0c922eb78d84be90d236a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8d8f590901e0677be79f2818fd58ca7 = $(`<div id="html_e8d8f590901e0677be79f2818fd58ca7" style="width: 100.0%; height: 100.0%;">Name: (2025 FP10) Date: 2025-04-12 Hazardous: 1</div>`)[0];
+                popup_7ae004782e0c922eb78d84be90d236a0.setContent(html_e8d8f590901e0677be79f2818fd58ca7);
+            
+        
+
+        marker_0ad7142b2fe5586955bf04b5f187aef3.bindPopup(popup_7ae004782e0c922eb78d84be90d236a0)
+        ;
+
+        
+    
+    
+                marker_0ad7142b2fe5586955bf04b5f187aef3.setIcon(icon_825b1fee77f94b9c49e1f7faf70073db);
+            
+    
+            var marker_5686bbcb8e7de3b9f21aa0f5bcc1f8f2 = L.marker(
+                [34.8300274996471, -177.6633491792968],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_699a330046a1a0bb2961e634b8835137 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ff5c5c8ef6c78aeaa461d39026870c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6262f948539cd8b42280b53df701de26 = $(`<div id="html_6262f948539cd8b42280b53df701de26" style="width: 100.0%; height: 100.0%;">Name: 462959 (2011 DU) Date: 2025-04-25 Hazardous: 1</div>`)[0];
+                popup_7ff5c5c8ef6c78aeaa461d39026870c2.setContent(html_6262f948539cd8b42280b53df701de26);
+            
+        
+
+        marker_5686bbcb8e7de3b9f21aa0f5bcc1f8f2.bindPopup(popup_7ff5c5c8ef6c78aeaa461d39026870c2)
+        ;
+
+        
+    
+    
+                marker_5686bbcb8e7de3b9f21aa0f5bcc1f8f2.setIcon(icon_699a330046a1a0bb2961e634b8835137);
+            
+    
+            var marker_42d500fbdf316366d1d32b97df8b0a1c = L.marker(
+                [20.976834846738072, 32.01084476879279],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_43867d3f95488b89c3c9635c9ef227f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfb8928b72334991a8b621e28cd0accd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6636f0437cd1ba2e25e3967ef3f6f782 = $(`<div id="html_6636f0437cd1ba2e25e3967ef3f6f782" style="width: 100.0%; height: 100.0%;">Name: (2002 JX8) Date: 2025-05-09 Hazardous: 1</div>`)[0];
+                popup_dfb8928b72334991a8b621e28cd0accd.setContent(html_6636f0437cd1ba2e25e3967ef3f6f782);
+            
+        
+
+        marker_42d500fbdf316366d1d32b97df8b0a1c.bindPopup(popup_dfb8928b72334991a8b621e28cd0accd)
+        ;
+
+        
+    
+    
+                marker_42d500fbdf316366d1d32b97df8b0a1c.setIcon(icon_43867d3f95488b89c3c9635c9ef227f1);
+            
+    
+            var marker_d31aab7a6809a1e3124b689a5a5d7d4d = L.marker(
+                [-21.356600611277713, 66.44312916065229],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_81c6106e9b28ac633a715d10b68fb5df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d80d7fbd32bbca25427caa42f15b1f5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de86e32e40382269c1f6c2b34a2f7e06 = $(`<div id="html_de86e32e40382269c1f6c2b34a2f7e06" style="width: 100.0%; height: 100.0%;">Name: 612356 (2002 JX8) Date: 2025-05-09 Hazardous: 1</div>`)[0];
+                popup_d80d7fbd32bbca25427caa42f15b1f5b.setContent(html_de86e32e40382269c1f6c2b34a2f7e06);
+            
+        
+
+        marker_d31aab7a6809a1e3124b689a5a5d7d4d.bindPopup(popup_d80d7fbd32bbca25427caa42f15b1f5b)
+        ;
+
+        
+    
+    
+                marker_d31aab7a6809a1e3124b689a5a5d7d4d.setIcon(icon_81c6106e9b28ac633a715d10b68fb5df);
+            
+    
+            var marker_290541c3820f55a7f77b56c72d5e6fb1 = L.marker(
+                [-37.36205262659674, 49.29621713215906],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_ad62a74dc85a7459ab11518ab20dd3fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b5f49100fbe4084cd4cb3cd7a4223f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_514571306c6cb0cdb62f27fbf039b52f = $(`<div id="html_514571306c6cb0cdb62f27fbf039b52f" style="width: 100.0%; height: 100.0%;">Name: 424482 (2008 DG5) Date: 2025-06-05 Hazardous: 1</div>`)[0];
+                popup_3b5f49100fbe4084cd4cb3cd7a4223f6.setContent(html_514571306c6cb0cdb62f27fbf039b52f);
+            
+        
+
+        marker_290541c3820f55a7f77b56c72d5e6fb1.bindPopup(popup_3b5f49100fbe4084cd4cb3cd7a4223f6)
+        ;
+
+        
+    
+    
+                marker_290541c3820f55a7f77b56c72d5e6fb1.setIcon(icon_ad62a74dc85a7459ab11518ab20dd3fb);
+            
+    
+            var marker_ad9ad383dfc9971ae705f500482be2ef = L.marker(
+                [-77.91902311312336, 19.037246854194507],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_e584aa5fd8910226e20c5673e79a160d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c6d0d970c8b2c8ca816d02af1bc89e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24acda23f908db3adf8be4bbd01263ea = $(`<div id="html_24acda23f908db3adf8be4bbd01263ea" style="width: 100.0%; height: 100.0%;">Name: (1997 QK1) Date: 2025-08-20 Hazardous: 1</div>`)[0];
+                popup_4c6d0d970c8b2c8ca816d02af1bc89e7.setContent(html_24acda23f908db3adf8be4bbd01263ea);
+            
+        
+
+        marker_ad9ad383dfc9971ae705f500482be2ef.bindPopup(popup_4c6d0d970c8b2c8ca816d02af1bc89e7)
+        ;
+
+        
+    
+    
+                marker_ad9ad383dfc9971ae705f500482be2ef.setIcon(icon_e584aa5fd8910226e20c5673e79a160d);
+            
+    
+            var marker_66a4f26b6e887f5acf52fc73c36e5b78 = L.marker(
+                [-69.85991826274078, 64.17844893999413],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_2008d66b8409ee086a1eefd9de32701f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7dc3d3f4ddf8bdd38c0a3e15f568c462 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_305f62daeca391d7702fb8e56404a622 = $(`<div id="html_305f62daeca391d7702fb8e56404a622" style="width: 100.0%; height: 100.0%;">Name: (1997 QK1) Date: 2025-08-20 Hazardous: 1</div>`)[0];
+                popup_7dc3d3f4ddf8bdd38c0a3e15f568c462.setContent(html_305f62daeca391d7702fb8e56404a622);
+            
+        
+
+        marker_66a4f26b6e887f5acf52fc73c36e5b78.bindPopup(popup_7dc3d3f4ddf8bdd38c0a3e15f568c462)
+        ;
+
+        
+    
+    
+                marker_66a4f26b6e887f5acf52fc73c36e5b78.setIcon(icon_2008d66b8409ee086a1eefd9de32701f);
+            
+    
+            var marker_dca5acd3c7a45c3e933b962ce9ffb4fa = L.marker(
+                [60.48048749035175, 105.4496685291],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_be481233147265caad24f28dc2250315 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3cf0fda1f374f79100b14dff99d9460 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e947b0f1df3282ab18265564037ee2e = $(`<div id="html_3e947b0f1df3282ab18265564037ee2e" style="width: 100.0%; height: 100.0%;">Name: (1998 SH2) Date: 2025-08-30 Hazardous: 1</div>`)[0];
+                popup_c3cf0fda1f374f79100b14dff99d9460.setContent(html_3e947b0f1df3282ab18265564037ee2e);
+            
+        
+
+        marker_dca5acd3c7a45c3e933b962ce9ffb4fa.bindPopup(popup_c3cf0fda1f374f79100b14dff99d9460)
+        ;
+
+        
+    
+    
+                marker_dca5acd3c7a45c3e933b962ce9ffb4fa.setIcon(icon_be481233147265caad24f28dc2250315);
+            
+    
+            var marker_c23015b990b3f16b3eea34a802071333 = L.marker(
+                [-15.841363535219074, 77.46475147892943],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_92d87b06b0a636e4374408f52d987294 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5888a2c3af0c4fc51fe178232210bab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d5893d85938bd72b099630bd62db4d1 = $(`<div id="html_5d5893d85938bd72b099630bd62db4d1" style="width: 100.0%; height: 100.0%;">Name: (2009 FF) Date: 2025-09-11 Hazardous: 1</div>`)[0];
+                popup_f5888a2c3af0c4fc51fe178232210bab.setContent(html_5d5893d85938bd72b099630bd62db4d1);
+            
+        
+
+        marker_c23015b990b3f16b3eea34a802071333.bindPopup(popup_f5888a2c3af0c4fc51fe178232210bab)
+        ;
+
+        
+    
+    
+                marker_c23015b990b3f16b3eea34a802071333.setIcon(icon_92d87b06b0a636e4374408f52d987294);
+            
+    
+            var marker_b6e5a05b3f60df0c0482d672efbe9f1b = L.marker(
+                [1.9058155363899942, -63.834824349160655],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_14fc402deac9bbb8e4644e7c0633a053 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d231a835987fc0b5a25aef5adb8716ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00b050bd8df20751e3c802af5977ff19 = $(`<div id="html_00b050bd8df20751e3c802af5977ff19" style="width: 100.0%; height: 100.0%;">Name: (2025 FA22) Date: 2025-09-18 Hazardous: 1</div>`)[0];
+                popup_d231a835987fc0b5a25aef5adb8716ec.setContent(html_00b050bd8df20751e3c802af5977ff19);
+            
+        
+
+        marker_b6e5a05b3f60df0c0482d672efbe9f1b.bindPopup(popup_d231a835987fc0b5a25aef5adb8716ec)
+        ;
+
+        
+    
+    
+                marker_b6e5a05b3f60df0c0482d672efbe9f1b.setIcon(icon_14fc402deac9bbb8e4644e7c0633a053);
+            
+    
+            var marker_49a61453803bd9996030c8684618200a = L.marker(
+                [-1.4126455577292347, 67.0167216287445],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_e39237f83ace5328d133a60204997e70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48ff71814cfcc02c5174f1ff69699594 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a540f1bf8ad09273f412dcb7909cff99 = $(`<div id="html_a540f1bf8ad09273f412dcb7909cff99" style="width: 100.0%; height: 100.0%;">Name: 152664 (1998 FW4) Date: 2025-09-29 Hazardous: 1</div>`)[0];
+                popup_48ff71814cfcc02c5174f1ff69699594.setContent(html_a540f1bf8ad09273f412dcb7909cff99);
+            
+        
+
+        marker_49a61453803bd9996030c8684618200a.bindPopup(popup_48ff71814cfcc02c5174f1ff69699594)
+        ;
+
+        
+    
+    
+                marker_49a61453803bd9996030c8684618200a.setIcon(icon_e39237f83ace5328d133a60204997e70);
+            
+    
+            var marker_7d91b6290977196b56ebcf3699e7f6f0 = L.marker(
+                [-39.48101154347853, -133.7028160607011],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_ff3e144dd5582590e4b80bf462178c8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94d3db14dfe09826860a276f788e4054 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c74eb72b4986ed60785d8921f991dc2 = $(`<div id="html_0c74eb72b4986ed60785d8921f991dc2" style="width: 100.0%; height: 100.0%;">Name: 516155 (2016 DP) Date: 2025-11-24 Hazardous: 1</div>`)[0];
+                popup_94d3db14dfe09826860a276f788e4054.setContent(html_0c74eb72b4986ed60785d8921f991dc2);
+            
+        
+
+        marker_7d91b6290977196b56ebcf3699e7f6f0.bindPopup(popup_94d3db14dfe09826860a276f788e4054)
+        ;
+
+        
+    
+    
+                marker_7d91b6290977196b56ebcf3699e7f6f0.setIcon(icon_ff3e144dd5582590e4b80bf462178c8b);
+            
+    
+            var marker_f97d2254e7804d379c7a4ceca9b8f9d2 = L.marker(
+                [-88.40280780226381, 66.47358350195674],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_bec3a454b338abb8411510013f29e67a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf86feaf58e18c08b346998aa296d44b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e8e7153077e7c1eb3cd935d40b6e565 = $(`<div id="html_0e8e7153077e7c1eb3cd935d40b6e565" style="width: 100.0%; height: 100.0%;">Name: (2019 UT6) Date: 2025-11-25 Hazardous: 1</div>`)[0];
+                popup_bf86feaf58e18c08b346998aa296d44b.setContent(html_0e8e7153077e7c1eb3cd935d40b6e565);
+            
+        
+
+        marker_f97d2254e7804d379c7a4ceca9b8f9d2.bindPopup(popup_bf86feaf58e18c08b346998aa296d44b)
+        ;
+
+        
+    
+    
+                marker_f97d2254e7804d379c7a4ceca9b8f9d2.setIcon(icon_bec3a454b338abb8411510013f29e67a);
+            
+    
+            var marker_6916fcfd717df4e694bfbcfe9649555b = L.marker(
+                [43.69835338613183, 39.82645445710409],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_9db17f57141e36c41a217085d51fc52c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c27117a8287789811454cd41c678b3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7937be33149384d22a505380b4935b82 = $(`<div id="html_7937be33149384d22a505380b4935b82" style="width: 100.0%; height: 100.0%;">Name: 516155 (2016 DP) Date: 2025-11-24 Hazardous: 1</div>`)[0];
+                popup_3c27117a8287789811454cd41c678b3d.setContent(html_7937be33149384d22a505380b4935b82);
+            
+        
+
+        marker_6916fcfd717df4e694bfbcfe9649555b.bindPopup(popup_3c27117a8287789811454cd41c678b3d)
+        ;
+
+        
+    
+    
+                marker_6916fcfd717df4e694bfbcfe9649555b.setIcon(icon_9db17f57141e36c41a217085d51fc52c);
+            
+    
+            var marker_ad3c9e8ae01adcd4288181eb7e69b100 = L.marker(
+                [6.254752007971575, -117.68024488876479],
+                {
+}
+            ).addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+    
+            var icon_16bd45fd6e86896557c4ebf510dde09f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e8af9e979af3149ca633e6e8efd31c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60969a7d82c6d38e560c52e1e89167d0 = $(`<div id="html_60969a7d82c6d38e560c52e1e89167d0" style="width: 100.0%; height: 100.0%;">Name: (2007 VM184) Date: 2025-12-01 Hazardous: 1</div>`)[0];
+                popup_6e8af9e979af3149ca633e6e8efd31c4.setContent(html_60969a7d82c6d38e560c52e1e89167d0);
+            
+        
+
+        marker_ad3c9e8ae01adcd4288181eb7e69b100.bindPopup(popup_6e8af9e979af3149ca633e6e8efd31c4)
+        ;
+
+        
+    
+    
+                marker_ad3c9e8ae01adcd4288181eb7e69b100.setIcon(icon_16bd45fd6e86896557c4ebf510dde09f);
+            
+    
+            var heat_map_50e6a5c71daf897756db7a6ab618b126 = L.heatLayer(
+                [[11.429254376301174, 34.369987108763354], [40.53109760405579, -12.25280299233296], [13.601527481506551, 41.139177744197895], [-29.476416950355542, -61.26128882197487], [63.44640182604192, -96.40070478530455], [89.7252632163052, -68.68011100927339], [34.8300274996471, -177.6633491792968], [20.976834846738072, 32.01084476879279], [-21.356600611277713, 66.44312916065229], [-37.36205262659674, 49.29621713215906], [-77.91902311312336, 19.037246854194507], [-69.85991826274078, 64.17844893999413], [60.48048749035175, 105.4496685291], [-15.841363535219074, 77.46475147892943], [1.9058155363899942, -63.834824349160655], [-1.4126455577292347, 67.0167216287445], [-39.48101154347853, -133.7028160607011], [-88.40280780226381, 66.47358350195674], [43.69835338613183, 39.82645445710409], [6.254752007971575, -117.68024488876479]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 0.5,
+  "radius": 20,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_50e6a5c71daf897756db7a6ab618b126.addTo(map_a4365cada1ca543da990286e5974e8b7);
+        
+</script>
+</html>
